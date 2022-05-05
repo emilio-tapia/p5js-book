@@ -2,7 +2,7 @@ const canvasWidth = window.innerWidth
 const canvasHeight = window.innerHeight
 let guessItem = null;
 let solution = null;
-const interval = 100 //controls frequency random number is generated
+const interval = 90 //controls frequency random number is generated
 let resultsArr = [];
 let gameOver = false;
 let gameScore;
@@ -226,7 +226,7 @@ function Item(x, y, size){
   this.content = getContent();
 
   function getContent(){
-    return parseInt(random(10), 10); // get random Integer function
+    return parseInt(Math.random()*10, 10); // get random Integer function
   }
 
   this.answerCheck = function(input){ // function check if the input === content , returns boolean
