@@ -6,3 +6,49 @@ html, body {
 canvas {
   display: block;
 }
+
+p{
+  font-weight: 300;
+  font-size: 4vw;
+  text-align: center;
+  position: absolute;
+  bottom: 10vh;
+  left: 86.5%;
+  transform: translateX(-50%);
+  color: #e8e8e8;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: linear-gradient(#2a2a2a87 40%, #2f2f2e);
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 15px -2px #e8e8e8b3;
+  transition: all 3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  background: radial-gradient(#e8e8e8 90%, #2f2f2e 5%);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: radial-gradient(#cb504092 50%, #898686 10%);
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
