@@ -27,7 +27,7 @@ function setup() {
   noFill();
 
   // FIRST EXERCISE
-  for(let i=0; i<100; i++){
+  for(let i=0; i<60; i++){
     let randomValue = random(5,120);
     sizes.push(randomValue)
   }
